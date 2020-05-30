@@ -1,0 +1,37 @@
+body {
+  background-color: #000;
+}
+
+.container {
+  text-align: center;
+  border: 1px solid #fff;
+  width: 21rem;
+  width: 24.7rem;
+  margin: 0 auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.box {
+  width: .7rem;
+  height: .7rem;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+.flex_row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
