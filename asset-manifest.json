@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/greedy_snake_game/static/css/main.84ca17a2.chunk.css",
+    "main.js": "/greedy_snake_game/static/js/main.3ae6775d.chunk.js",
+    "main.js.map": "/greedy_snake_game/static/js/main.3ae6775d.chunk.js.map",
+    "runtime-main.js": "/greedy_snake_game/static/js/runtime-main.de42eea7.js",
+    "runtime-main.js.map": "/greedy_snake_game/static/js/runtime-main.de42eea7.js.map",
+    "static/js/2.55414915.chunk.js": "/greedy_snake_game/static/js/2.55414915.chunk.js",
+    "static/js/2.55414915.chunk.js.map": "/greedy_snake_game/static/js/2.55414915.chunk.js.map",
+    "index.html": "/greedy_snake_game/index.html",
+    "precache-manifest.5d2e01f53277e4d52729f81e5d8ee416.js": "/greedy_snake_game/precache-manifest.5d2e01f53277e4d52729f81e5d8ee416.js",
+    "service-worker.js": "/greedy_snake_game/service-worker.js",
+    "static/css/main.84ca17a2.chunk.css.map": "/greedy_snake_game/static/css/main.84ca17a2.chunk.css.map",
+    "static/js/2.55414915.chunk.js.LICENSE.txt": "/greedy_snake_game/static/js/2.55414915.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de42eea7.js",
+    "static/js/2.55414915.chunk.js",
+    "static/css/main.84ca17a2.chunk.css",
+    "static/js/main.3ae6775d.chunk.js"
+  ]
+}
