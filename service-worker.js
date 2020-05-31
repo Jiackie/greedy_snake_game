@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/greedy_snake_game/precache-manifest.227d9dadcf4a77c7c2651d29309e33d0.js"
+  "/greedy_snake_game/precache-manifest.bc4d109deff459be994b39e6eba0b3b4.js"
 );
 
 self.addEventListener('message', (event) => {

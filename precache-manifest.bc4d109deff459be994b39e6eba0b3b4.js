@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fb8d2000432c481ca1646a382ef42ee8",
+    "revision": "6475adf8ec49003fb3fb9081425903b2",
     "url": "/greedy_snake_game/index.html"
   },
   {
-    "revision": "27c128ffba2c400246e7",
+    "revision": "590563cf7f8a51ea731a",
     "url": "/greedy_snake_game/static/css/main.067389ca.chunk.css"
   },
   {
-    "revision": "eb954e1bd14447d5b2dc",
-    "url": "/greedy_snake_game/static/js/2.55414915.chunk.js"
+    "revision": "dea8f5434a98b0b7b079",
+    "url": "/greedy_snake_game/static/js/2.05cb91b4.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/greedy_snake_game/static/js/2.55414915.chunk.js.LICENSE.txt"
+    "url": "/greedy_snake_game/static/js/2.05cb91b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "27c128ffba2c400246e7",
-    "url": "/greedy_snake_game/static/js/main.b98d8f4e.chunk.js"
+    "revision": "590563cf7f8a51ea731a",
+    "url": "/greedy_snake_game/static/js/main.ccdb07f9.chunk.js"
   },
   {
     "revision": "c5db6a03501f84447d72",
