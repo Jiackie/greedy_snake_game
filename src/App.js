@@ -14,6 +14,8 @@ export default function App() {
   const [redPoint, setRedPoint] = useState([21,27]);
   const [dir, setDir] = useState('right');
   const [sneakPoint, setSneakPoint] = useState([[15, 15], [15, 14], [15, 13], [15, 12]]);
+  const [touchStartX, setTouchStartX] = useState('');
+  const [touchStartY, setTouchStartY] = useState('');
 
   const changeDirection = useCallback(e => {
     switch (e.keyCode) {
@@ -53,6 +55,47 @@ export default function App() {
           break;
       }
     }, [dir]);
+ 
+  const handleTouchStart = useCallback(e => {
+    setTouchStartX(e.touches[0].screenX);
+    setTouchStartY(e.touches[0].screenY);
+  }, []);
+
+  const handleTouchEnd = useCallback(e => {
+    const endX = e.changedTouches[0].screenX;
+    const endY = e.changedTouches[0].screenY;
+    const difX = endX - touchStartX;
+    const difY = touchStartY - endY;
+    if (difX > 0) {
+    
+      if (difY > 0 && difX < difY) {
+        setDir('up');
+        return;
+      }
+    
+      if (difY < 0 && difX < 0 - difY) {
+        setDir('down');
+        return;
+      }
+    
+      setDir('right');
+      return;
+    } else {
+    
+      if (difY > 0 && 0 - difX < difY) {
+        setDir('up');
+        return;
+      }
+    
+      if (difY < 0 && difX > difY) {
+        setDir('down');
+        return;
+      }
+    
+      setDir('left');
+      return;
+    }
+  }, [touchStartX, touchStartY])
 
   useEffect(() => {
     window.addEventListener("keydown", changeDirection);
@@ -60,6 +103,15 @@ export default function App() {
       window.removeEventListener("keydown", changeDirection);
     };
   },[changeDirection]);
+
+  useEffect(() => {
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [handleTouchStart, handleTouchEnd]);
 
   useEffect(() => {
     const time = window.setTimeout(() => {
