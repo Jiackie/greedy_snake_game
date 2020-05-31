@@ -97,7 +97,7 @@ export default function App() {
         tmp.pop();
         setSneakPoint([[headRow, headCol], ...tmp]);
       }
-    }, 70);
+    }, 80);
     return () => {
       window.clearInterval(time);
     };
